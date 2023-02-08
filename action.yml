@@ -1,0 +1,10 @@
+name: 'GET Call to Endppoint Action'
+description: 'Calls a specified endpoint and prints the returned data to console'
+inputs:
+  api-endpoint-url:   #ID of input
+    description: 'The endpoint to call'
+    required: true
+    default: 'https://catfact.ninja/fact'
+runs:
+  using: 'node16'
+  main: 'index.js'
